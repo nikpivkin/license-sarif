@@ -10,21 +10,384 @@
           "name": "Trivy",
           "rules": [
             {
-              "id": ":MIT",
+              "id": "alpine-base:GPL-3.0",
               "name": "License",
               "shortDescription": {
-                "text": "MIT in "
+                "text": "GPL-3.0 in alpine-base"
               },
               "fullDescription": {
-                "text": "MIT in "
+                "text": "GPL-3.0 in alpine-base"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-3.0\nClassification: restricted\nPkgName: alpine-base\nPath: ",
+                "markdown": "**License GPL-3.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|alpine-base|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "alpine-baselayout:GPL-2.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-2.0 in alpine-baselayout"
+              },
+              "fullDescription": {
+                "text": "GPL-2.0 in alpine-baselayout"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-2.0\nClassification: restricted\nPkgName: alpine-baselayout\nPath: ",
+                "markdown": "**License GPL-2.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|alpine-baselayout|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "alpine-conf:GPL-2.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-2.0 in alpine-conf"
+              },
+              "fullDescription": {
+                "text": "GPL-2.0 in alpine-conf"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-2.0\nClassification: restricted\nPkgName: alpine-conf\nPath: ",
+                "markdown": "**License GPL-2.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|alpine-conf|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "alpine-keys:GPL-3.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-3.0 in alpine-keys"
+              },
+              "fullDescription": {
+                "text": "GPL-3.0 in alpine-keys"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-3.0\nClassification: restricted\nPkgName: alpine-keys\nPath: ",
+                "markdown": "**License GPL-3.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|alpine-keys|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "apk-tools:GPL-2.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-2.0 in apk-tools"
+              },
+              "fullDescription": {
+                "text": "GPL-2.0 in apk-tools"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-2.0\nClassification: restricted\nPkgName: apk-tools\nPath: ",
+                "markdown": "**License GPL-2.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|apk-tools|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "busybox:GPL-2.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-2.0 in busybox"
+              },
+              "fullDescription": {
+                "text": "GPL-2.0 in busybox"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-2.0\nClassification: restricted\nPkgName: busybox\nPath: ",
+                "markdown": "**License GPL-2.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|busybox|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "busybox-initscripts:GPL-2.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-2.0 in busybox-initscripts"
+              },
+              "fullDescription": {
+                "text": "GPL-2.0 in busybox-initscripts"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-2.0\nClassification: restricted\nPkgName: busybox-initscripts\nPath: ",
+                "markdown": "**License GPL-2.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|busybox-initscripts|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "libc-utils:GPL-3.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-3.0 in libc-utils"
+              },
+              "fullDescription": {
+                "text": "GPL-3.0 in libc-utils"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-3.0\nClassification: restricted\nPkgName: libc-utils\nPath: ",
+                "markdown": "**License GPL-3.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|libc-utils|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "libcrypto1.0:openssl",
+              "name": "License",
+              "shortDescription": {
+                "text": "openssl in libcrypto1.0"
+              },
+              "fullDescription": {
+                "text": "openssl in libcrypto1.0"
               },
               "defaultConfiguration": {
                 "level": "note"
               },
-              "helpUri": "https://spdx.org/licenses/MIT.html",
               "help": {
-                "text": "License MIT\nClassification: notice\nPkgName: \nPath: LICENSE",
-                "markdown": "**License MIT**\n| PkgName | Classification | Path |\n| --- | --- |\n||notice|LICENSE|"
+                "text": "License openssl\nClassification: unknown\nPkgName: libcrypto1.0\nPath: ",
+                "markdown": "**License openssl**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|libcrypto1.0|unknown||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "0.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            {
+              "id": "libssl1.0:openssl",
+              "name": "License",
+              "shortDescription": {
+                "text": "openssl in libssl1.0"
+              },
+              "fullDescription": {
+                "text": "openssl in libssl1.0"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "help": {
+                "text": "License openssl\nClassification: unknown\nPkgName: libssl1.0\nPath: ",
+                "markdown": "**License openssl**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|libssl1.0|unknown||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "0.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            {
+              "id": "musl:MIT",
+              "name": "License",
+              "shortDescription": {
+                "text": "MIT in musl"
+              },
+              "fullDescription": {
+                "text": "MIT in musl"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "help": {
+                "text": "License MIT\nClassification: notice\nPkgName: musl\nPath: ",
+                "markdown": "**License MIT**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|musl|notice||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "musl-utils:GPL-2.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-2.0 in musl-utils"
+              },
+              "fullDescription": {
+                "text": "GPL-2.0 in musl-utils"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-2.0\nClassification: restricted\nPkgName: musl-utils\nPath: ",
+                "markdown": "**License GPL-2.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|musl-utils|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "openrc:BSD-2",
+              "name": "License",
+              "shortDescription": {
+                "text": "BSD-2 in openrc"
+              },
+              "fullDescription": {
+                "text": "BSD-2 in openrc"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "help": {
+                "text": "License BSD-2\nClassification: unknown\nPkgName: openrc\nPath: ",
+                "markdown": "**License BSD-2**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|openrc|unknown||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "0.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            {
+              "id": "scanelf:GPL-2.0",
+              "name": "License",
+              "shortDescription": {
+                "text": "GPL-2.0 in scanelf"
+              },
+              "fullDescription": {
+                "text": "GPL-2.0 in scanelf"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "help": {
+                "text": "License GPL-2.0\nClassification: restricted\nPkgName: scanelf\nPath: ",
+                "markdown": "**License GPL-2.0**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|scanelf|restricted||"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "license",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "zlib:Zlib",
+              "name": "License",
+              "shortDescription": {
+                "text": "Zlib in zlib"
+              },
+              "fullDescription": {
+                "text": "Zlib in zlib"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "help": {
+                "text": "License Zlib\nClassification: notice\nPkgName: zlib\nPath: ",
+                "markdown": "**License Zlib**\n| PkgName | Classification | Path |\n| --- | --- | --- |\n|zlib|notice||"
               },
               "properties": {
                 "precision": "very-high",
@@ -42,17 +405,17 @@
       },
       "results": [
         {
-          "ruleId": ":MIT",
+          "ruleId": "alpine-base:GPL-3.0",
           "ruleIndex": 0,
-          "level": "note",
+          "level": "error",
           "message": {
-            "text": "Artifact: Loose File License(s)\nType: \nLicense MIT\nPkgName: notice\n Classification: \n Path: LICENSE"
+            "text": "Artifact: OS Packages\nLicense GPL-3.0\nPkgName: restricted\n Classification: alpine-base\n Path: "
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Loose File License(s)",
+                  "uri": "OS Packages",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -63,7 +426,385 @@
                 }
               },
               "message": {
-                "text": "LICENSE: "
+                "text": "OS Packages: alpine-base"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "alpine-baselayout:GPL-2.0",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-2.0\nPkgName: restricted\n Classification: alpine-baselayout\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: alpine-baselayout"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "alpine-conf:GPL-2.0",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-2.0\nPkgName: restricted\n Classification: alpine-conf\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: alpine-conf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "alpine-keys:GPL-3.0",
+          "ruleIndex": 3,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-3.0\nPkgName: restricted\n Classification: alpine-keys\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: alpine-keys"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "apk-tools:GPL-2.0",
+          "ruleIndex": 4,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-2.0\nPkgName: restricted\n Classification: apk-tools\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: apk-tools"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "busybox:GPL-2.0",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-2.0\nPkgName: restricted\n Classification: busybox\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: busybox"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "busybox-initscripts:GPL-2.0",
+          "ruleIndex": 6,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-2.0\nPkgName: restricted\n Classification: busybox-initscripts\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: busybox-initscripts"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "libc-utils:GPL-3.0",
+          "ruleIndex": 7,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-3.0\nPkgName: restricted\n Classification: libc-utils\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: libc-utils"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "libcrypto1.0:openssl",
+          "ruleIndex": 8,
+          "level": "note",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense openssl\nPkgName: unknown\n Classification: libcrypto1.0\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: libcrypto1.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "libssl1.0:openssl",
+          "ruleIndex": 9,
+          "level": "note",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense openssl\nPkgName: unknown\n Classification: libssl1.0\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: libssl1.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "musl:MIT",
+          "ruleIndex": 10,
+          "level": "note",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense MIT\nPkgName: notice\n Classification: musl\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: musl"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "musl-utils:GPL-2.0",
+          "ruleIndex": 11,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-2.0\nPkgName: restricted\n Classification: musl-utils\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: musl-utils"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "openrc:BSD-2",
+          "ruleIndex": 12,
+          "level": "note",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense BSD-2\nPkgName: unknown\n Classification: openrc\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: openrc"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "scanelf:GPL-2.0",
+          "ruleIndex": 13,
+          "level": "error",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense GPL-2.0\nPkgName: restricted\n Classification: scanelf\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: scanelf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "zlib:Zlib",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "Artifact: OS Packages\nLicense Zlib\nPkgName: notice\n Classification: zlib\n Path: "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "OS Packages",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "OS Packages: zlib"
               }
             }
           ]
@@ -74,6 +815,15 @@
         "ROOTPATH": {
           "uri": "file:///"
         }
+      },
+      "properties": {
+        "imageName": "alpine:3.1",
+        "repoDigests": [
+          "alpine@sha256:4dfc68bc95af5c1beb5e307133ce91546874dcd0d880736b25ddbe6f483c65b4"
+        ],
+        "repoTags": [
+          "alpine:3.1"
+        ]
       }
     }
   ]
