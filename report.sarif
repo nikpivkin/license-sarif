@@ -10,412 +10,76 @@
           "name": "Trivy",
           "rules": [
             {
-              "id": "alpine-base:GPL-3.0",
-              "name": "License",
+              "id": "DS002",
+              "name": "Misconfiguration",
               "shortDescription": {
-                "text": "GPL-3.0"
+                "text": "Image user should not be \u0026#39;root\u0026#39;"
               },
               "fullDescription": {
-                "text": "TODO"
+                "text": "Running containers with \u0026#39;root\u0026#39; user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a \u0026#39;USER\u0026#39; statement to the Dockerfile."
               },
               "defaultConfiguration": {
                 "level": "error"
               },
+              "helpUri": "https://avd.aquasec.com/misconfig/ds002",
               "help": {
-                "text": "License GPL-3.0\nClassification: restricted\nPkgName: alpine-base",
-                "markdown": "**License GPL-3.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|alpine-base|"
+                "text": "Misconfiguration DS002\nType: Dockerfile Security Check\nSeverity: HIGH\nCheck: Image user should not be 'root'\nMessage: Specify at least 1 USER command in Dockerfile with non-root user as argument\nLink: [DS002](https://avd.aquasec.com/misconfig/ds002)\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.",
+                "markdown": "**Misconfiguration DS002**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Dockerfile Security Check|HIGH|Image user should not be 'root'|Specify at least 1 USER command in Dockerfile with non-root user as argument|[DS002](https://avd.aquasec.com/misconfig/ds002)|\n\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile."
               },
               "properties": {
                 "precision": "very-high",
                 "security-severity": "8.0",
                 "tags": [
-                  "license",
+                  "misconfiguration",
                   "security",
                   "HIGH"
                 ]
               }
             },
             {
-              "id": "alpine-baselayout:GPL-2.0",
-              "name": "License",
+              "id": "DS026",
+              "name": "Misconfiguration",
               "shortDescription": {
-                "text": "GPL-2.0"
+                "text": "No HEALTHCHECK defined"
               },
               "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-2.0\nClassification: restricted\nPkgName: alpine-baselayout",
-                "markdown": "**License GPL-2.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|alpine-baselayout|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "alpine-conf:GPL-2.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-2.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-2.0\nClassification: restricted\nPkgName: alpine-conf",
-                "markdown": "**License GPL-2.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|alpine-conf|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "alpine-keys:GPL-3.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-3.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-3.0\nClassification: restricted\nPkgName: alpine-keys",
-                "markdown": "**License GPL-3.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|alpine-keys|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "apk-tools:GPL-2.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-2.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-2.0\nClassification: restricted\nPkgName: apk-tools",
-                "markdown": "**License GPL-2.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|apk-tools|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "busybox:GPL-2.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-2.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-2.0\nClassification: restricted\nPkgName: busybox",
-                "markdown": "**License GPL-2.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|busybox|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "busybox-initscripts:GPL-2.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-2.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-2.0\nClassification: restricted\nPkgName: busybox-initscripts",
-                "markdown": "**License GPL-2.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|busybox-initscripts|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "libc-utils:GPL-3.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-3.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-3.0\nClassification: restricted\nPkgName: libc-utils",
-                "markdown": "**License GPL-3.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|libc-utils|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "libcrypto1.0:openssl",
-              "name": "License",
-              "shortDescription": {
-                "text": "openssl"
-              },
-              "fullDescription": {
-                "text": "TODO"
+                "text": "You should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers."
               },
               "defaultConfiguration": {
                 "level": "note"
               },
+              "helpUri": "https://avd.aquasec.com/misconfig/ds026",
               "help": {
-                "text": "License openssl\nClassification: unknown\nPkgName: libcrypto1.0",
-                "markdown": "**License openssl**\n| Classification | PkgName |\n| --- | --- |\n|unknown|libcrypto1.0|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "0.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "UNKNOWN"
-                ]
-              }
-            },
-            {
-              "id": "libssl1.0:openssl",
-              "name": "License",
-              "shortDescription": {
-                "text": "openssl"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "help": {
-                "text": "License openssl\nClassification: unknown\nPkgName: libssl1.0",
-                "markdown": "**License openssl**\n| Classification | PkgName |\n| --- | --- |\n|unknown|libssl1.0|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "0.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "UNKNOWN"
-                ]
-              }
-            },
-            {
-              "id": "musl:MIT",
-              "name": "License",
-              "shortDescription": {
-                "text": "MIT"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "help": {
-                "text": "License MIT\nClassification: notice\nPkgName: musl",
-                "markdown": "**License MIT**\n| Classification | PkgName |\n| --- | --- |\n|notice|musl|"
+                "text": "Misconfiguration DS026\nType: Dockerfile Security Check\nSeverity: LOW\nCheck: No HEALTHCHECK defined\nMessage: Add HEALTHCHECK instruction in your Dockerfile\nLink: [DS026](https://avd.aquasec.com/misconfig/ds026)\nYou should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers.",
+                "markdown": "**Misconfiguration DS026**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Dockerfile Security Check|LOW|No HEALTHCHECK defined|Add HEALTHCHECK instruction in your Dockerfile|[DS026](https://avd.aquasec.com/misconfig/ds026)|\n\nYou should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers."
               },
               "properties": {
                 "precision": "very-high",
                 "security-severity": "2.0",
                 "tags": [
-                  "license",
-                  "security",
-                  "LOW"
-                ]
-              }
-            },
-            {
-              "id": "musl-utils:GPL-2.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-2.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-2.0\nClassification: restricted\nPkgName: musl-utils",
-                "markdown": "**License GPL-2.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|musl-utils|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "openrc:BSD-2",
-              "name": "License",
-              "shortDescription": {
-                "text": "BSD-2"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "help": {
-                "text": "License BSD-2\nClassification: unknown\nPkgName: openrc",
-                "markdown": "**License BSD-2**\n| Classification | PkgName |\n| --- | --- |\n|unknown|openrc|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "0.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "UNKNOWN"
-                ]
-              }
-            },
-            {
-              "id": "scanelf:GPL-2.0",
-              "name": "License",
-              "shortDescription": {
-                "text": "GPL-2.0"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "error"
-              },
-              "help": {
-                "text": "License GPL-2.0\nClassification: restricted\nPkgName: scanelf",
-                "markdown": "**License GPL-2.0**\n| Classification | PkgName |\n| --- | --- |\n|restricted|scanelf|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "8.0",
-                "tags": [
-                  "license",
-                  "security",
-                  "HIGH"
-                ]
-              }
-            },
-            {
-              "id": "zlib:Zlib",
-              "name": "License",
-              "shortDescription": {
-                "text": "Zlib"
-              },
-              "fullDescription": {
-                "text": "TODO"
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "help": {
-                "text": "License Zlib\nClassification: notice\nPkgName: zlib",
-                "markdown": "**License Zlib**\n| Classification | PkgName |\n| --- | --- |\n|notice|zlib|"
-              },
-              "properties": {
-                "precision": "very-high",
-                "security-severity": "2.0",
-                "tags": [
-                  "license",
+                  "misconfiguration",
                   "security",
                   "LOW"
                 ]
               }
             }
           ],
-          "version": "dev"
+          "version": "0.43.1"
         }
       },
       "results": [
         {
-          "ruleId": "alpine-base:GPL-3.0",
+          "ruleId": "DS002",
           "ruleIndex": 0,
           "level": "error",
           "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-3.0\nClassification: restricted\nPkgName: alpine-base"
+            "text": "Artifact: Dockerfile\nType: dockerfile\nVulnerability DS002\nSeverity: HIGH\nMessage: Specify at least 1 USER command in Dockerfile with non-root user as argument\nLink: [DS002](https://avd.aquasec.com/misconfig/ds002)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "OS Packages",
+                  "uri": "Dockerfile",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -426,212 +90,23 @@
                 }
               },
               "message": {
-                "text": "OS Packages: alpine-base"
+                "text": "Dockerfile"
               }
             }
           ]
         },
         {
-          "ruleId": "alpine-baselayout:GPL-2.0",
+          "ruleId": "DS026",
           "ruleIndex": 1,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-2.0\nClassification: restricted\nPkgName: alpine-baselayout"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: alpine-baselayout"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "alpine-conf:GPL-2.0",
-          "ruleIndex": 2,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-2.0\nClassification: restricted\nPkgName: alpine-conf"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: alpine-conf"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "alpine-keys:GPL-3.0",
-          "ruleIndex": 3,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-3.0\nClassification: restricted\nPkgName: alpine-keys"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: alpine-keys"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "apk-tools:GPL-2.0",
-          "ruleIndex": 4,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-2.0\nClassification: restricted\nPkgName: apk-tools"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: apk-tools"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "busybox:GPL-2.0",
-          "ruleIndex": 5,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-2.0\nClassification: restricted\nPkgName: busybox"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: busybox"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "busybox-initscripts:GPL-2.0",
-          "ruleIndex": 6,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-2.0\nClassification: restricted\nPkgName: busybox-initscripts"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: busybox-initscripts"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "libc-utils:GPL-3.0",
-          "ruleIndex": 7,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-3.0\nClassification: restricted\nPkgName: libc-utils"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: libc-utils"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "libcrypto1.0:openssl",
-          "ruleIndex": 8,
           "level": "note",
           "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense openssl\nClassification: unknown\nPkgName: libcrypto1.0"
+            "text": "Artifact: Dockerfile\nType: dockerfile\nVulnerability DS026\nSeverity: LOW\nMessage: Add HEALTHCHECK instruction in your Dockerfile\nLink: [DS026](https://avd.aquasec.com/misconfig/ds026)"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "OS Packages",
+                  "uri": "Dockerfile",
                   "uriBaseId": "ROOTPATH"
                 },
                 "region": {
@@ -642,169 +117,7 @@
                 }
               },
               "message": {
-                "text": "OS Packages: libcrypto1.0"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "libssl1.0:openssl",
-          "ruleIndex": 9,
-          "level": "note",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense openssl\nClassification: unknown\nPkgName: libssl1.0"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: libssl1.0"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "musl:MIT",
-          "ruleIndex": 10,
-          "level": "note",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense MIT\nClassification: notice\nPkgName: musl"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: musl"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "musl-utils:GPL-2.0",
-          "ruleIndex": 11,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-2.0\nClassification: restricted\nPkgName: musl-utils"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: musl-utils"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "openrc:BSD-2",
-          "ruleIndex": 12,
-          "level": "note",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense BSD-2\nClassification: unknown\nPkgName: openrc"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: openrc"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "scanelf:GPL-2.0",
-          "ruleIndex": 13,
-          "level": "error",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense GPL-2.0\nClassification: restricted\nPkgName: scanelf"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: scanelf"
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "zlib:Zlib",
-          "ruleIndex": 14,
-          "level": "note",
-          "message": {
-            "text": "Artifact: OS Packages\nType: \nLicense Zlib\nClassification: notice\nPkgName: zlib"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "OS Packages",
-                  "uriBaseId": "ROOTPATH"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 1
-                }
-              },
-              "message": {
-                "text": "OS Packages: zlib"
+                "text": "Dockerfile"
               }
             }
           ]
@@ -817,12 +130,10 @@
         }
       },
       "properties": {
-        "imageName": "alpine:3.1",
-        "repoDigests": [
-          "alpine@sha256:4dfc68bc95af5c1beb5e307133ce91546874dcd0d880736b25ddbe6f483c65b4"
-        ],
+        "imageName": "issue3758",
+        "repoDigests": [],
         "repoTags": [
-          "alpine:3.1"
+          "issue3758:latest"
         ]
       }
     }
