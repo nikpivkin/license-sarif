@@ -37,6 +37,33 @@
               }
             },
             {
+              "id": "DS005",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "ADD instead of COPY"
+              },
+              "fullDescription": {
+                "text": "You should use COPY instead of ADD unless you want to extract a tar file. Note that an ADD command will extract a tar file, which adds the risk of Zip-based vulnerabilities. Accordingly, it is advised to use a COPY command, which does not extract tar files."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/ds005",
+              "help": {
+                "text": "Misconfiguration DS005\nType: Dockerfile Security Check\nSeverity: LOW\nCheck: ADD instead of COPY\nMessage: Consider using 'COPY . /app' command instead of 'ADD . /app'\nLink: [DS005](https://avd.aquasec.com/misconfig/ds005)\nYou should use COPY instead of ADD unless you want to extract a tar file. Note that an ADD command will extract a tar file, which adds the risk of Zip-based vulnerabilities. Accordingly, it is advised to use a COPY command, which does not extract tar files.",
+                "markdown": "**Misconfiguration DS005**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Dockerfile Security Check|LOW|ADD instead of COPY|Consider using 'COPY . /app' command instead of 'ADD . /app'|[DS005](https://avd.aquasec.com/misconfig/ds005)|\n\nYou should use COPY instead of ADD unless you want to extract a tar file. Note that an ADD command will extract a tar file, which adds the risk of Zip-based vulnerabilities. Accordingly, it is advised to use a COPY command, which does not extract tar files."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
               "id": "DS026",
               "name": "Misconfiguration",
               "shortDescription": {
@@ -96,8 +123,35 @@
           ]
         },
         {
-          "ruleId": "DS026",
+          "ruleId": "DS005",
           "ruleIndex": 1,
+          "level": "note",
+          "message": {
+            "text": "Artifact: Dockerfile\nType: dockerfile\nVulnerability DS005\nSeverity: LOW\nMessage: Consider using 'COPY . /app' command instead of 'ADD . /app'\nLink: [DS005](https://avd.aquasec.com/misconfig/ds005)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "Dockerfile"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DS026",
+          "ruleIndex": 2,
           "level": "note",
           "message": {
             "text": "Artifact: Dockerfile\nType: dockerfile\nVulnerability DS026\nSeverity: LOW\nMessage: Add HEALTHCHECK instruction in your Dockerfile\nLink: [DS026](https://avd.aquasec.com/misconfig/ds026)"
@@ -128,13 +182,6 @@
         "ROOTPATH": {
           "uri": "file:///"
         }
-      },
-      "properties": {
-        "imageName": "issue3758",
-        "repoDigests": [],
-        "repoTags": [
-          "issue3758:latest"
-        ]
       }
     }
   ]
